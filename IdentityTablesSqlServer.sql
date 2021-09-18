@@ -60,6 +60,7 @@ CREATE TABLE [IdentityUser](
 	[LockoutEnd] [datetime] NULL,
 	[LockoutEnabled] [bit] NOT NULL,
 	[AccessFailedCount] [int] NOT NULL,
+	[Address] [varchar](256) NOT NULL,
  CONSTRAINT [PK_IdentityUser] PRIMARY KEY CLUSTERED 
 (
 	[Id] ASC
