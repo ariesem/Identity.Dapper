@@ -1,7 +1,8 @@
 CREATE SCHEMA dbo
 -- Table: dbo."IdentityUser"
 CREATE TABLE dbo."IdentityUser"
-(
+(  
+  "Id" serial NOT NULL,
   "UserName" character varying(256) NOT NULL,
   "Email" character varying(256) NOT NULL,
   "EmailConfirmed" boolean NOT NULL,
@@ -13,7 +14,7 @@ CREATE TABLE dbo."IdentityUser"
   "LockoutEnd" timestamp without time zone,
   "LockoutEnabled" boolean NOT NULL,
   "AccessFailedCount" integer NOT NULL,
-  "Id" serial NOT NULL,
+  "Address" character varying(256) NOT NULL,
   CONSTRAINT "PK_IdentityUser" PRIMARY KEY ("Id")
 )
 WITH (
