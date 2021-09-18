@@ -24,6 +24,7 @@ CREATE TABLE `identityuser` (
   `LockoutEnd` DATETIME NULL,
   `LockoutEnabled` BIT(1) NOT NULL,
   `AccessFailedCount` INT NOT NULL,
+  `Address` VARCHAR(256) NOT NULL,
   PRIMARY KEY (`Id`));
 
 
